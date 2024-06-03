@@ -1,0 +1,32 @@
+[workspace]
+members = [".", "src/nftui-lib"]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+authors = ["Michael Yang <admin@my4ng.dev>"]
+description = "A TUI application for managing nftables"
+homepage = "https://github.com/my4ng/nftui"
+repository = "https://github.com/my4ng/nftui"
+readme = "README.md"
+keywords = ["tui", "nftables", "netfilter", "firewall"]
+categories = ["command-line-utilities"]
+rust-version = "1.70"
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+nftui-lib = { path = "src/nftui-lib", version = "0.1.0" }
+
+[package]
+name = "nftui"
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+homepage.workspace = true
+repository.workspace = true
+readme.workspace = true
+keywords.workspace = true
+categories.workspace = true
+rust-version.workspace = true
+license.workspace = true
