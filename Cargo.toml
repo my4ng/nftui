@@ -1,7 +1,5 @@
-[workspace]
-members = [".", "src/nftui-lib"]
-
-[workspace.package]
+[package]
+name = "nftui"
 edition = "2021"
 version = "0.1.0"
 authors = ["Michael Yang <admin@my4ng.dev>"]
@@ -14,19 +12,9 @@ categories = ["command-line-utilities"]
 rust-version = "1.70"
 license = "MIT OR Apache-2.0"
 
-[workspace.dependencies]
-nftui-lib = { path = "src/nftui-lib", version = "0.1.0" }
-
-[package]
-name = "nftui"
-edition.workspace = true
-version.workspace = true
-authors.workspace = true
-description.workspace = true
-homepage.workspace = true
-repository.workspace = true
-readme.workspace = true
-keywords.workspace = true
-categories.workspace = true
-rust-version.workspace = true
-license.workspace = true
+[dependencies]
+anyhow = "1.0"
+crossterm = "0.27"
+nftnl = "0.6"
+ratatui = "0.26"
+sudo = "0.6"
